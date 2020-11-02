@@ -5,7 +5,7 @@ var tableData = data;
 // Select button
 var button = d3.select("#filter-btn");
 // Select form
-var form = d3.select("#ufo-table");
+var form = d3.select("#datetime");
 // Get a reference to the table body
 var tbody = d3.select("tbody");
 console.log(data)
@@ -19,7 +19,7 @@ function runEnter() {
     d3.event.preventDefault();
 
     //Select input elements
-    var inputElement = d3.select("#btn btn-default");
+    var inputElement = d3.select("#datetime");
     var inputValue = inputElement.property("value");
 
     console.log(inputValue);
