@@ -5,7 +5,10 @@ var tableData = data;
 // Select button
 var button = d3.select("#filter-btn");
 // Select form
-var form = d3.select("#filters");
+var form = d3.select("#ufo-table");
+// Get a reference to the table body
+var tbody = d3.select("tbody");
+console.log(data)
 //Create event handlers
 button.on("click", runEnter);
 form.on("submit", runEnter);
