@@ -30,8 +30,16 @@ function runEnter() {
     var filteredState = tableData.filter(ufo => ufo.state === inputValue);
     var filteredCountry = tableData.filter(ufo => ufo.country === inputValue);
     var filteredShape = tableData.filter(ufo => ufo.state === inputValue);
+    var filteredDuration = tableData.filter(ufo => ufo.durationMinutes === inputValue);
+    var filteredComments = tableData.filter(ufo => ufo.comments === inputValue);
 
     console.log(filteredDate);
     console.log(filteredCity);
 
 }
+
+//remove any children from the list
+List.html("");
+
+//append filter to list
+list.append("li").text(`${filteredDate}`);
