@@ -42,4 +42,5 @@ function runEnter() {
 List.html("");
 
 //append filter to list
+tbody.append("td").text(`${filteredDate}`);
 list.append("li").text(`${filteredDate}`);
